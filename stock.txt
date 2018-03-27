@@ -4,6 +4,7 @@
 	"all_money_me": "-39941",
 	"hui_money": "173519",
 	"hui_money_me": "-18460",
+	"yesday":"0",
 	"stock_list": [{
 		"name": "青岛海尔",
 		"all": "75480",
