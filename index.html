@@ -70,6 +70,14 @@
                         }else{
                             node_hui.innerHTML="目投入："+item.hui_money+"&nbsp;&nbsp;目盈利：<span style='color: grey'>"+item.hui_money_me+"</span>";
                         }
+                       var node_yes_day=document.createElement("div");
+                        if(item.yesday>0){
+                            node_yes_day.innerHTML="相对上一日收益：<span style='color: red'>"+item.yesday+"</span>";
+                        }else if(item.yesday<0){
+                            node_yes_day.innerHTML="相对上一日收益：<span style='color: green'>"+item.yesday+"</span>";
+                        }else{
+                            node_yes_day.innerHTML="相对上一日收益：<span style='color: grey'>"+item.yesday+"</span>";
+                        }
                         var node_stock_list=document.createElement("div");
                         node_stock_list.setAttribute("class","main_list_all");
                         for(var b=0;b<item.stock_list.length;b++){
@@ -88,6 +96,7 @@
                         node.appendChild(node_h3);
                         node.appendChild(node_all);
                         node.appendChild(node_hui);
+                        node.appendChild(node_yes_day);
                         node.appendChild(node_stock_list);
                         $(".div_all").append(node);
                     }
