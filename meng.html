@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的作品集</title>
+    <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                background-color: #f0f4fb;
+            }
+        .image_all{
+            width: 70%;
+            height: auto;
+            margin-left: 15%;
+            background-color: #FFFFFF;
+            text-align: center;
+        }
+        .image_title{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .imageDiv{
+            width: 100%;
+            height: auto;
+            display: inline;
+        }
+
+        .div_in{
+             display: inline;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+           $(document).ready(function(){
+                  var url ="image.txt";
+                  $.get(url, function (data, status) {
+                      var json = JSON.parse(data);
+                        $(".h2_title").text(json.name);
+                        $.each(json.items, function (i, item) {
+                            var node=document.createElement("div");
+                            node.setAttribute("class","clearDiv");
+                            var spanNode=document.createElement("span");
+                            spanNode.innerHTML="<br/>"+item.title+"<br/><br/>";
+                            spanNode.setAttribute("class","image_title");
+                            node.appendChild(spanNode);
+                              var nodeDiv=document.createElement("div");
+                              nodeDiv.setAttribute("class","imageDiv");
+                                $.each(item.images, function (a, it) {
+                                     var nodeDivimage=document.createElement("div");
+                                       nodeDivimage.setAttribute("class","div_in");
+                                        nodeDivimage.innerHTML="<img src='"+it.image+"' style='display: inline' class='div_in_image'/>";
+                                       nodeDiv.appendChild(nodeDivimage);
+
+                                });
+
+
+                            $(".image_all").append(node);
+                              $(".image_all").append(nodeDiv);
+                        });
+
+                  });
+           });
+    </script>
+</head>
+<body>
+        <div style="height: 50px;width: 70%;margin-left: 15%;background-color: #FFFFFF;text-align: center;line-height: 50px;">
+            <h2 class="h2_title"></h2>
+        </div>
+        <div class="image_all">
+
+        </div>
+</body>
+</html>
