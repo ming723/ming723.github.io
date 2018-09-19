@@ -1,0 +1,9 @@
+{
+	"abners": [{
+		"image": "https://code.aliyun.com/598254259/AndroidGuide/raw/master/txt/banner/banner_b.png"
+	}, {
+		"image": "https://code.aliyun.com/598254259/AndroidGuide/raw/master/txt/banner/banner_a.png"
+	}, {
+		"image": "https://code.aliyun.com/598254259/AndroidGuide/raw/master/txt/banner/banner_c.png"
+	}]
+}
