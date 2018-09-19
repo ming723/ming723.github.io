@@ -1,9 +1,9 @@
 {
 	"abners": [{
-		"image": "https://code.aliyun.com/598254259/AndroidGuide/raw/master/txt/banner/banner_b.png"
+		"image": "https://github.com/ming723/ming723.github.io/raw/master/img/a.jpg"
 	}, {
-		"image": "https://code.aliyun.com/598254259/AndroidGuide/raw/master/txt/banner/banner_a.png"
+		"image": "https://github.com/ming723/ming723.github.io/raw/master/img/b.jpg"
 	}, {
-		"image": "https://code.aliyun.com/598254259/AndroidGuide/raw/master/txt/banner/banner_c.png"
+		"image": "https://github.com/ming723/ming723.github.io/raw/master/img/c.jpg"
 	}]
 }
