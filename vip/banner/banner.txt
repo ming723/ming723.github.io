@@ -1,0 +1,13 @@
+[
+	{
+		"pic":"https://code.aliyun.com/598254259/AndroidGuide/raw/master/web/txt/banner/banner_0.png",
+		"title":"我是标题"
+	},{
+		"pic":"https://code.aliyun.com/598254259/AndroidGuide/raw/master/web/txt/banner/banner_0.png",
+		"title":"我是标题"
+	},{
+		"pic":"https://code.aliyun.com/598254259/AndroidGuide/raw/master/web/txt/banner/banner_0.png",
+		"title":"我是标题"
+	}
+  
+]
