@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <title>八维资讯</title>
+
+    <style>
+        .div_all{
+            width:100%;
+            height:100%;
+        }
+
+.div_login{
+    width:70%;
+    margin-left:15%;
+
+}
+
+.div_login input{
+    width:100%;
+    height:30px;
+    margin-top:10px;
+    border:1px solid #d43c3c;
+}
+
+.div_login_user{
+    width:100%;
+    height:30px;
+    margin-top:10px;
+    background-color:#d43c3c;
+    color:#ffffff;
+    font-size:16px;
+    text-align:center;
+    line-height:30px;
+    border-radius:5px;
+}
+.div_login_title{
+    color:#d43c3c;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.div_user{
+ width:70%;
+    margin-left:15%;
+    margin-top:20%;
+     display:none;
+}
+
+.div_user_con{
+    text-align:center;
+}
+
+    </style>
+</head>
+<body>
+<div class="div_all">
+    <div class="div_login">
+        <div class="div_login_title">
+            Android电商项目实战月考
+        </div>
+        <input type="text" placeholder="请输入账号" id="user_phone"/><br/>
+        <input type="text" placeholder="请输入密码" id="user_pass"/>
+        <div class="div_login_user" onclick="clickLogin()">登录</div>
+
+    </div>
+    <div class="div_user">
+        <div class="div_user_con">
+            <h4>已经登录</h4>
+            <h4 class="div_user_con_name">账号是：</h4>
+            <h4 class="div_user_con_pass">密码是：</h4>
+        </div>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript">
+
+        function clear(name,pass){
+          var divUser= document.getElementsByClassName("div_user")[0];
+                   var divLogin= document.getElementsByClassName("div_login")[0];
+                   divUser.style.display="block";
+                   divLogin.style.display="none";
+                    document.getElementsByClassName("div_user_con_name")[0].innerText="账号:"+name;
+                document.getElementsByClassName("div_user_con_pass")[0].innerText="密码:"+pass;
+        }
+        function createUser(name,pass){
+                if(name=="666666"&&pass=="888888"){
+                        clear(name,pass);
+                }else{
+                    divUser.style.display="none";
+                   divLogin.style.display="block";
+                }
+        }
+
+        function clickLogin(){
+                var user=document.getElementById("user_phone").value;
+                var pass=document.getElementById("user_pass").value;
+                if(user==null||user==""){
+                    return;
+                }
+                  if(pass==null||pass==""){
+                    return;
+                }
+                if(user!="666666"){
+                    return;
+                }
+                 if(pass!="888888"){
+                    return;
+                }
+                clear(user,pass)
+                window.android.login(user,pass);
+        }
+    </script>
+
+</html>
