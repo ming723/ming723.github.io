@@ -1,0 +1,27 @@
+{
+	"items": [{
+		"student": "朱一龙",
+		"image": "http://newimg.mingxing.com//upload/content/20190516/5b0a0668e24d53622cdfb95a4f314edc.jpg",
+		"desc": "朱一龙登录《时装 L'OFFICIEL》6月刊封面大片，不疾不徐迎风而行"
+	}, {
+		"student": "韩阿筎",
+		"image": "http://newimg.mingxing.com//upload/content/20190516/b4962bb092752372d4bb5f4983409f88.jpg",
+		"desc": "韩阿筎那戛纳街拍写真 漫步戛纳惬意如画"
+	}, {
+		"student": "刘涛",
+		"image": "http://newimg.mingxing.com//upload/content/20190510/afad7fc9131bbd11c57e00b51883b668.jpg",
+		"desc": "刘涛清新元气活动写真 造型利落充满都市感"
+	}, {
+		"student": "易烊千玺",
+		"image": "http://newimg.mingxing.com/upload/content/20190101/8tFXk6TP.jpg",
+		"desc": "易烊千玺潮流时尚写真图片"
+	}, {
+		"student": "吴晴",
+		"image": "http://newimg.mingxing.com/upload/content/20190101/cjxXT3ZM.jpg",
+		"desc": "演员吴晴最新外景写真组图 展示健康之美"
+	}, {
+		"student": "赖冠霖",
+		"image": "http://newimg.mingxing.com/upload/content/20190101/n5d7VOJ4.jpg",
+		"desc": "赖冠霖清爽帅气写真图片"
+	}]
+}
