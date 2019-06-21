@@ -8,8 +8,9 @@ import android.view.ViewGroup;
 import android.widget.Scroller;
 
 /**
- * author:AbnerMing
- * date:2019/6/18
+ * 
+ * 自定义侧滑删除
+ *
  */
 public class SwipeView extends ViewGroup {
     private int downX, moveX, moved;
