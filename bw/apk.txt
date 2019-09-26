@@ -1,0 +1,3 @@
+{
+	"apk": "http://ming723.github.io/apk/wdshop_test_6.apk"
+}
