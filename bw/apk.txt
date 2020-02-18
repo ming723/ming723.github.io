@@ -1,3 +1,3 @@
 {
-	"apk": "http://ming723.github.io/apk/wdshop_test_6.apk"
+	"apk": "http://mobile.bwstudent.com/media/product/mall/mall_standard.apk"
 }
