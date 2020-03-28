@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>随机提问</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .div_center{
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            line-height:300px;
+            font-size: 68px;
+            font-weight: bold;
+        }
+        .div_btn{
+            text-align: center;
+            font-size: 48px;
+        }
+        .start{
+            border: 1px solid #f16e50;
+            color: #f16e50;
+            border-radius: 10px;
+             padding: 10px 30px 10px 30px;
+            cursor: pointer;
+        }
+       .start:hover{
+            background-color: #f16e50;
+            color: #ffffff;
+        }
+    </style>
+      <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+     <script>
+        $(document).ready(function () {
+            var interval;
+            var bool=true;
+            $(".div_btn").click(function () {
+                if(bool==true){
+                   startTime();
+                      $(".start").text("暂停");
+                    bool=false;
+                }else{
+                    $(".start").text("开始");
+                    stopTime();
+                    bool=true;
+                }
+            });
+
+
+			var tempNum=0;
+            function startTime() {
+			tempNum++;
+                interval=setInterval(function () {
+                    var num=Math.floor(Math.random()*22);
+                    var names=getName(num);		
+					$(".name").text(names);
+				
+                },2);
+            }
+
+            function stopTime() {
+                clearInterval(interval);	
+				
+            }
+			
+
+            function getName(num) {
+                var name="再来一次";
+                switch (num) {
+                    
+                        case 0:
+                        name="王欢";
+                        break;
+                  
+                        case 1:
+                        name="毕杨丹";
+                        break;
+                      
+                        case 2:
+                        name="任孟杰";
+                        break;
+                        case 3:
+                        name="李岩";
+                        break;
+                        case 4:
+                        name="赵建栋";
+                        break;
+                        case 5:
+                        name="高振朝";
+                        break;
+                        case 6:
+                        name="王正宇";
+                        break;
+                        case 7:
+                        name="王晓伟";
+                        break;
+                        case 8:
+                        name="李锰雨";
+                        break;
+                      
+                        case 9:
+                        name="高雪骄";
+                        break;
+                    
+                        case 10:
+                        name="李呈达";
+                        break;
+           
+                      
+                         case 11:
+                        name="张帆";
+                        break;
+						 case 12:
+                        name="章霆锋";
+                        break;
+						 case 13:
+						    name="曹相龙";
+						   break;
+				
+						  case 14:
+                        name="李凌旭";
+						 break;
+						  case 15:
+                        name="董昳森";
+						 break;
+						  case 16:
+                        name="陈成";
+						 break;
+						  case 17:
+                        name="游理豪";
+						 break;
+						  case 18:
+                        name="李华亮";
+						 break;
+						   case 19:
+                        name="赵国庆";
+						 break;
+						  case 20:
+                        name="刘芮西";
+						 break;
+						 case 21:
+                        name="袁士龙";
+						 break;
+                }
+				
+                return name;
+            }
+        });
+        </script>
+</head>
+<body>
+    <div class="div_center">
+        <span class="name">随机提问</span>
+    </div>
+    <div class="div_btn">
+        <span class="start">开始</span>
+    </div>
+</body>
+</html>
